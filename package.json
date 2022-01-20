@@ -5,7 +5,8 @@
   "main": "main-bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon server.js",
+    "serve": "node server.js",
+    "start": "webpack-dev-server --mode development --hot",
     "webpack": "webpack --watch"
   },
   "repository": {
@@ -19,17 +20,23 @@
   },
   "homepage": "https://github.com/helluvalazyass/react-assignment-unlu#readme",
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "express": "^4.17.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.8",
     "@babel/preset-react": "^7.16.7",
+    "@hot-loader/react-dom": "^17.0.2",
     "babel-loader": "^8.2.3",
     "html-webpack-plugin": "^5.5.0",
+    "react-hot-loader": "^4.13.0",
     "webpack": "^5.66.0",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
   }
 }
